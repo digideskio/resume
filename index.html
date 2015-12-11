@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<title>Joe Zeng :: Résumé</title>
+	<script type="text/javascript" src="resume.js"></script>
+
+	<link rel="stylesheet" href="resume.css" />
+
+	<script type="text/javascript" src="react/format.js"></script>
+	<script type="text/javascript" src="react/react.js"></script>
+	<script type="text/javascript" src="react/Resume_components.js"></script>
+	<script type="text/javascript" src="react/Resume.js"></script>
+</head>
+
+<body>
+
+<div id="page">
+<script type="text/javascript">
+	React.render(React.createElement(Resume, {resume: resume}), document.getElementById("page"));
+</script>
+</div>
+
+</body>
+
+</html>

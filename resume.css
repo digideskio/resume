@@ -1,0 +1,48 @@
+html, body {
+	font-family: Avenir Next, Futura, Lato, Arial, sans-serif;
+}
+
+div#page {
+	max-width: 720px;
+	padding: 40px;
+	margin: auto;
+}
+
+div.info {
+	float: right;
+	text-align: right;
+	max-width: 300px;
+}
+
+h1 {
+	display: inline-block;
+}
+
+h2 {
+	background-color: #eeeeee;
+	border-radius: 4px;
+	padding: 4px 8px;
+}
+
+h3 {
+	display: inline-block;
+	margin: 0.5em 0;
+}
+
+div.rightinfo {
+	float: right;
+	text-align: right;
+}
+
+h4, h5 {
+	margin: 0;
+}
+
+p {
+	clear: both;
+	margin-top: 0;
+}
+
+div.entry > ul {
+	margin-top: 0;
+}
