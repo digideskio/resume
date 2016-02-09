@@ -2,7 +2,7 @@ var resume = {
 
 	"info": {
 		"name": "Joe Zeng",
-		"email": "joe@monsteragames.com",
+		"email": "joe@joezeng.com",
 		"phone": "(currently unavailable)",
 		"website": "http://joezeng.com",
 		"github": "http://github.com/joezeng",
@@ -13,6 +13,7 @@ var resume = {
 
 	"skills": [
 		"3 years of professional web development experience using HTML5 and JavaScript",
+		"Proficiency with web frameworks, especially React (this résumé was made in it)",
 		"Over 10 years of amateur game development experience",
 		"An eagerness to learn new languages and frameworks",
 		"Previous development experience in C++, Python, Java, and Scheme",
@@ -41,7 +42,7 @@ var resume = {
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
 			"date_to": "present",
-			"description": "I'm currently working on a startup with a few other friends I've worked with before, to create a game-development company called Monstera Games, which is all about encouraging people to create fan works out of the games we make by giving them an open platform to do it on.",
+			"description": "I'm currently working on a startup with a few other friends I've worked with before, to create a game-development company called Monstera Games, which is all about growing creative communities around the games we make by giving them an open platform to make fan works on.",
 		}, {
 			"title": "Front-end Developer",
 			"company": "Facebook Inc.",
