@@ -3,7 +3,7 @@ var resume = {
 	"info": {
 		"name": "Joe Zeng",
 		"email": "joe@joezeng.com",
-		"phone": "(currently unavailable)",
+		"phone": "(647) 575-9364",
 		"website": "http://joezeng.com",
 		"github": "http://github.com/joezeng",
 		"u_email": "lzzeng@uwaterloo.ca",
