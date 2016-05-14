@@ -2,6 +2,11 @@ function datespan(date1, date2, res) {
 
 	var months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+	if (!date1) {
+		return "Error processing date range"
+	}
+	date2 = date2 || "present";
+
 	var granularity = Math.min(date1.length, date2.length, res);
 	var alike = 0;
 	for (var a = 0; a < granularity; ++a) {

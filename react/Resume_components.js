@@ -49,6 +49,7 @@ var SkillSummary = React.createClass({
 
 
 
+
 var ProjectEntry = React.createClass({
 
 	propTypes: {
@@ -56,6 +57,21 @@ var ProjectEntry = React.createClass({
 	},
 
 	render: function() {
+
+		var description = null;
+		if (this.props.project.description) {
+			description = React.createElement("p", {className: "project-description"}, [this.props.project.description]);
+		}
+
+		var points = null;
+		if (this.props.project.points) {
+			point_lis = [];
+			for (var a = 0; a < this.props.project.points.length; ++a) {
+				point_lis.push(React.createElement("li", {}, this.props.project.points[a]));
+			}
+			points = React.createElement("ul", {}, point_lis);
+		}
+
 		return (
 			React.createElement("div", {
 				className: "entry",
@@ -65,12 +81,15 @@ var ProjectEntry = React.createClass({
 					React.createElement("h4", {className: "project-company"}, [this.props.project.company]),
 					React.createElement("h5", {className: "project-date"}, [datespan(this.props.project.date_from, this.props.project.date_to, 2)]),
 				]),
-				React.createElement("p", {className: "project-description"}, [this.props.project.description]),
+				description,
+				points,
 			])
 		);
+
 	},
 
 });
+
 
 
 var ProjectList = React.createClass({
@@ -110,6 +129,21 @@ var JobEntry = React.createClass({
 	},
 
 	render: function() {
+
+		var description = null;
+		if (this.props.job.description) {
+			description = React.createElement("p", {className: "job-description"}, [this.props.job.description]);
+		}
+
+		var points = null;
+		if (this.props.job.points) {
+			var point_lis = [];
+			for (var a = 0; a < this.props.job.points.length; ++a) {
+				point_lis.push(React.createElement("li", {}, this.props.job.points[a]));
+			}
+			points = React.createElement("ul", {}, point_lis);
+		}
+
 		return (
 			React.createElement("div", {
 				className: "entry",
@@ -119,12 +153,15 @@ var JobEntry = React.createClass({
 					React.createElement("h4", {className: "job-company"}, [this.props.job.company]),
 					React.createElement("h5", {className: "job-date"}, [datespan(this.props.job.date_from, this.props.job.date_to, 2)]),
 				]),
-				React.createElement("p", {className: "job-description"}, [this.props.job.description]),
+				description,
+				points,
 			])
 		);
+
 	},
 
 });
+
 
 
 var WorkExperience = React.createClass({
