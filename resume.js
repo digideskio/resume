@@ -13,7 +13,7 @@ var resume = {
 
 	"skills": [
 		"3 years of professional web development experience using HTML5 and JavaScript",
-		"Proficiency with web frameworks, especially React (this résumé was made in it)",
+		"Proficiency with web frameworks, especially React.js (this résumé was made in it)",
 		"Over 10 years of amateur game development experience",
 		"An eagerness to learn new languages and frameworks",
 		"Previous development experience in C++, Python, Java, and Scheme",
@@ -24,7 +24,7 @@ var resume = {
 			"name": "Creatures of the North",
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
-			"date_to": "present",
+			"date_to": [2016, 2, 17],
 			"description": "The first game that Monstera Games is making. We're making a game that explores certain premises of Pokémon that are taken for granted by that series and deconstructing them in our own monster-battling game."
 		},
 		{
@@ -41,14 +41,14 @@ var resume = {
 			"title": "Full-stack Game Developer",
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
-			"date_to": "present",
-			"description": "I'm currently working on a startup with a few other friends I've worked with before, to create a game-development company called Monstera Games, which is all about growing creative communities around the games we make by giving them an open platform to make fan works on.",
+			"date_to": [2016, 2, 17],
+			"description": "I worked on a startup with a few other friends I've worked with before, to create a game-development company called Monstera Games. Our mission was to grow creative communities around the games we make by giving them an open platform to make fan works on.",
 		}, {
 			"title": "Front-end Developer",
 			"company": "Facebook Inc.",
 			"date_from": [2015, 1, 12],
 			"date_to": [2015, 5, 1],
-			"description": "As a co-op intern, I developed a \"page voice selector\" component for use in Facebook's Pages and Business Manager applications, which allows Page administrators to comment as a page without leaving their personal account.",
+			"description": "As a co-op intern, I developed a unified \"Page selector\" component for use in Facebook's Pages and Business Manager applications, which brought together the functionality of multiple page selectors written by different teams for different platforms.",
 		}, {
 			"title": "Server-side Developer",
 			"company": "A Thinking Ape",
@@ -70,7 +70,6 @@ var resume = {
 			"date_from": [2011, 9, 12],
 			"date_to": "present",
 			"degree": "Bachelor of Mathematics",
-			"grad_date": [2016, 12],
 			"term": "4A",
 		},
 	],
