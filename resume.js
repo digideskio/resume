@@ -21,6 +21,12 @@ var resume = {
 
 	"projects": [
 		{
+			"name": "joezeng.github.io",
+			"company": "",
+			"date_from": [2013, 10],
+			"description": "I develop a lot of web games and other oddities in my spare time to keep my programming skills sharp, all of which are hosted on Github Pages. They've gotten more and more advanced as time goes on, and I make impromptu SDKs out of previous games whenever I create a new one."
+		},
+		{
 			"name": "Creatures of the North",
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
@@ -42,19 +48,19 @@ var resume = {
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
 			"date_to": [2016, 2, 17],
-			"description": "I worked on a startup with a few other friends I've worked with before, to create a game-development company called Monstera Games. Our mission was to grow creative communities around the games we make by giving them an open platform to make fan works on.",
+			"description": "I worked on a startup  to create a game-development company called Monstera Games. During our initial development phase, we built a website and a fully functioning role-playing game engine using HTML5 and Javascript, complete with map movement, events, and battles.",
 		}, {
 			"title": "Front-end Developer",
 			"company": "Facebook Inc.",
 			"date_from": [2015, 1, 12],
 			"date_to": [2015, 5, 1],
-			"description": "As a co-op intern, I developed a unified \"Page selector\" component for use in Facebook's Pages and Business Manager applications, which brought together the functionality of multiple page selectors written by different teams for different platforms.",
+			"description": "As a co-op intern, I developed a unified \"Page selector\" component for use in Facebook's Pages and Business Manager applications, which brought together the functionality of multiple page selectors written by different teams for different platforms into a single flexible, extensible component.",
 		}, {
 			"title": "Server-side Developer",
 			"company": "A Thinking Ape",
 			"date_from": [2013, 9, 3],
 			"date_to": [2013, 12, 20],
-			"description": "As a co-op intern, I developed server-side game logic code for their game \"S.M.A.S.H. Monsters\", including the creation of a quest/challenge framework.",
+			"description": "As a co-op intern, I developed server-side game logic code for their game \"S.M.A.S.H. Monsters\", including the creation of a quest/challenge framework. I also wrote unit tests and helped the client-side team periodically do internal testing of features.",
 		}, {
 			"title": "Application Developer",
 			"company": "Messageware Inc.",
