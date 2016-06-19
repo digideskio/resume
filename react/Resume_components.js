@@ -1,23 +1,28 @@
 var ResumeHeader = React.createClass({
 
 	propTypes: {
-		info: React.PropTypes.object
+		info: React.PropTypes.object,
+		config: React.PropTypes.object,
 	},
 
 	render: function() {
+		var config = this.props.config;
 		return (
 			React.createElement("div", {
-				className: "resume",
+				className: "resume" +
+				(config.printer_friendly ? " printer-friendly" : ""),
 			}, [
 				React.createElement("h1", { className: "header" }, [this.props.info.name]),
 				React.createElement("div", { className: "info" }, [
-					React.createElement("span", { className: "info-entry" }, [this.props.info.email]),
+					React.createElement("a", { className: "info-entry", href: "mailto:"+this.props.info.email }, [this.props.info.email]),
 					React.createElement("br"),
-					React.createElement("span", { className: "info-entry" }, [this.props.info.website]),
+					React.createElement("a", { className: "info-entry", href: this.props.info.website }, [this.props.info.website]),
 					React.createElement("br"),
-					React.createElement("span", { className: "info-entry" }, [this.props.info.github]),
+					React.createElement("a", { className: "info-entry", href: this.props.info.github }, [this.props.info.github]),
 					React.createElement("br"),
-					React.createElement("span", { className: "info-entry" }, [phone_number(this.props.info.phone)]),
+					React.createElement("a", { className: "info-entry", href: "tel:"+this.props.info.phone }, [phone_number(this.props.info.phone)]),
+					(config.university === true) ? React.createElement("br") : null,
+					(config.university === true) ? React.createElement("span", { className: "info-entry" }, [phone_number(this.props.info.u_email)]) : null,
 				]),
 			])
 		);
@@ -40,7 +45,7 @@ var SkillSummary = React.createClass({
 			arr.push(React.createElement("li", {key: a}, [skill]))
 		}
 		return React.createElement("div", {},
-			React.createElement("h2", {}, ["Skill Summary"]),
+			React.createElement("h2", {className: "section-header skills-header"}, ["Skill Summary"]),
 			React.createElement("ul", {}, arr)
 		);
 	}
@@ -111,7 +116,7 @@ var ProjectList = React.createClass({
 
 		return (
 			React.createElement("div", {className: "projects"}, [
-				React.createElement("h2", {className: "projects-header"}, ["Projects"]),
+				React.createElement("h2", {className: "section-header projects-header"}, ["Projects"]),
 				arr
 			])
 		);
@@ -183,7 +188,7 @@ var WorkExperience = React.createClass({
 
 		return (
 			React.createElement("div", {className: "work-experience"}, [
-				React.createElement("h2", {className: "work-exp-header"}, ["Work Experience"]),
+				React.createElement("h2", {className: "section-header work-exp-header"}, ["Work Experience"]),
 				arr
 			])
 		);
@@ -255,7 +260,7 @@ var Education = React.createClass({
 
 		return (
 			React.createElement("div", {className: "education"}, [
-				React.createElement("h2", {className: "education-header"}, ["Education"]),
+				React.createElement("h2", {className: "section-header education-header"}, ["Education"]),
 				arr
 			])
 		);

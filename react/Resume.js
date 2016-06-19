@@ -2,6 +2,7 @@ var Resume = React.createClass({
 
 	propTypes: {
 		resume: React.PropTypes.object,
+		config: React.PropTypes.object,
 	},
 
 	render: function() {
@@ -21,7 +22,10 @@ var Resume = React.createClass({
 
 		return (
 			React.createElement("div", { className: "resume" }, [
-				React.createElement(ResumeHeader, { info: this.props.resume.info }),
+				React.createElement(ResumeHeader, {
+					info: this.props.resume.info,
+					config: this.props.config,
+				}),
 				arr
 			])
 		);

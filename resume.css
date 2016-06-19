@@ -12,26 +12,44 @@ div.info {
 	float: right;
 	text-align: right;
 	max-width: 300px;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
 h1 {
 	display: inline-block;
 }
 
-h2 {
-	background-color: #eeeeee;
+h2.section-header {
+	background-color: #a9d267;
 	border-radius: 4px;
-	padding: 4px 8px;
+	padding: 6px 8px 4px;
+	clear: both;
+}
+
+.printer-friendly h2.section-header {
+	background-color: #eeeeee;
 }
 
 h3 {
+	color: #3709a7;
 	display: inline-block;
 	margin: 0.5em 0;
 }
 
+.printer-friendly h3 {
+	color: black;
+}
+
 div.rightinfo {
+	color: #3709a7;
+	margin-left: 20px;
 	float: right;
 	text-align: right;
+}
+
+.printer-friendly div.rightinfo {
+	color: black;
 }
 
 h4, h5 {
@@ -45,4 +63,14 @@ p {
 
 div.entry > ul {
 	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #00aeb1	;
+}
+
+a:hover {
+	text-decoration: none;
+	color: turquoise;
 }
