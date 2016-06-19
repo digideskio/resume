@@ -27,18 +27,10 @@ h2.section-header {
 	clear: both;
 }
 
-.printer-friendly h2.section-header {
-	background-color: #eeeeee;
-}
-
 h3 {
 	color: #3709a7;
 	display: inline-block;
 	margin: 0.5em 0;
-}
-
-.printer-friendly h3 {
-	color: black;
 }
 
 div.rightinfo {
@@ -46,10 +38,6 @@ div.rightinfo {
 	margin-left: 20px;
 	float: right;
 	text-align: right;
-}
-
-.printer-friendly div.rightinfo {
-	color: black;
 }
 
 h4, h5 {
@@ -67,10 +55,20 @@ div.entry > ul {
 
 a {
 	text-decoration: none;
-	color: #00aeb1	;
+	color: #00aeb1;
 }
 
 a:hover {
 	text-decoration: none;
 	color: turquoise;
+}
+
+
+@media print {
+	h2.section-header {
+		background-color: #eeeeee;
+	}
+	h3, a, div.rightinfo {
+		color: black;
+	}
 }
