@@ -22,7 +22,7 @@ var ResumeHeader = React.createClass({
 					React.createElement("br"),
 					React.createElement("a", { className: "info-entry", href: "tel:"+this.props.info.phone }, [phone_number(this.props.info.phone)]),
 					(config.university === true) ? React.createElement("br") : null,
-					(config.university === true) ? React.createElement("span", { className: "info-entry" }, [phone_number(this.props.info.u_email)]) : null,
+					(config.university === true) ? React.createElement("span", { className: "info-entry" }, [this.props.info.u_email]) : null,
 				]),
 			])
 		);

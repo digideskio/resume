@@ -33,7 +33,7 @@ var resume = {
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
 			"date_to": [2016, 2, 17],
-			"description": "Within the span of a single co-op term, a team that I founded wrote an engine for a web-based role-playing game from scratch, using only WebGL libraries and built-in browser APIs (no frameworks like Unity or Phaser.io)."
+			"description": "Within the span of a single co-op term, a team that I founded wrote an engine for a web-based role-playing game from scratch, using only WebGL libraries and standard browser APIs (no development frameworks like Unity or Phaser.io)."
 		},
 		{
 			"name": "Raindrop",
@@ -41,7 +41,7 @@ var resume = {
 			"company": "with Diego Ahumada",
 			"date_from": [2014, 1, 14],
 			"date_to": [2014, 12, 17],
-			"description": "I developed the scoring system and support for a variety of game mechanics for an independent rhythm game, and modified the codebase to support compiling into Linux for testing.",
+			"description": "I developed the scoring system and support for a variety of game mechanics for an independent rhythm game, and modified the codebase to support compiling into Linux for multiple operating system support.",
 		},
 	],
 
@@ -52,7 +52,7 @@ var resume = {
 			"company": "Monstera Games",
 			"date_from": [2015, 8, 12],
 			"date_to": [2016, 2, 17],
-			"description": "I worked on a startup to create a game-development company called Monstera Games. During our initial development phase, we built a website and a fully functioning role-playing game engine using HTML5 and Javascript, complete with map movement, events, and battles.",
+			"description": "I worked on a startup to create a game-development company called Monstera Games. During our initial development phase, we built a website and a fully functioning role-playing game engine using HTML5 and Javascript, using data-driven story flow control and a custom-designed battle system with real-time turn mechanics.",
 		}, {
 			"title": "Front-end Developer",
 			"tags": ["softdev", "coop"],

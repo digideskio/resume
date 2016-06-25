@@ -17,6 +17,12 @@
 
 <body>
 
+<div id="options">
+<script type="text/javascript">
+	React.render(React.createElement(OptionsDialog, {options: options}), document.getElementById("options"));
+</script>
+</div>
+
 <div id="page">
 <script type="text/javascript">
 	React.render(React.createElement(Resume, {resume: resume, config: config}), document.getElementById("page"));
